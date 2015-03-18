@@ -129,7 +129,7 @@ Template Name: Front
 			</div>
 			<div class="medium-3 small-6 columns">
 				<div class="partners--box">
-					&nbsp;
+					<img src="<?php bloginfo('template_directory'); ?>/images/logo-partner-bluedog.png" />
 				</div>
 			</div>
 		</div>		
