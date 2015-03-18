@@ -1,0 +1,881 @@
+/*
+Theme Name: Karma Rescue Theme
+Theme URI: 
+Author: William Tang, Benjamin Michaels
+Author URI: http://squorange.com
+Description: Simple, fresh theme for Karma, 2014JUL13
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: white, light, responsive-layout, 2015FEB10
+Text Domain: karmarescue 
+*/
+
+
+/**********
+
+GENERAL STYLES
+
+**********/
+
+body {
+	background: #fff;
+	font-family: 'Source Sans Pro', sans-serif;	
+	color: #555;
+	padding: 0 !important;
+}
+
+.button {
+	font-family: 'Source Sans Pro', sans-serif;	
+	font-size: 0.75rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.05rem;
+}
+
+img.responsive {
+	max-width: 100%;
+}
+
+h1 {
+	font-weight: 300;
+	color: #fff;
+	line-height: 2.5rem;
+}
+h1.header--page {
+	text-align: center;
+	color: #8bd1d7;
+}
+
+h2 {
+	font-weight: 400;
+	font-size: 1.25rem;
+	color: #f17a5d;
+	letter-spacing: 0.07rem;
+	line-height: 1.5rem;
+}
+
+h3 {
+	font-weight: 300;
+	color: #8bd1d7;
+	text-transform: uppercase;
+	letter-spacing: 0.05rem;
+	font-size: 1.25rem;
+}
+
+h4 {
+	font-weight: 300;
+	font-size: 0.8rem;
+	color: #f17a5d;
+	text-transform: uppercase;
+	letter-spacing: 0.07rem;
+}
+
+p, li {
+	line-height: 1.4em;
+	font-weight: 300;
+	font-size: 1.4rem;
+}
+
+.quote--text, .quote--cited {
+	color: #f17a5d;
+}
+.quote--cited {
+	text-align: right;
+}
+
+.text--center {
+	text-align: center;
+}
+.img--center {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+}
+.button--outline {
+	height: 50px;
+	margin-top: 35px;
+	border: 2px solid #f17a5d !important;
+	color: #f17a5d;
+	background: transparent;
+}
+.button--outline:hover {
+	background: #f17a5d;
+	color: #fff;	
+}
+
+p a {
+	color: #555;
+	text-decoration: none;
+	border-bottom: 1px dotted #555;	
+}
+p a:hover {
+	color: #000;
+	border-bottom: 1px solid #000;
+}
+
+nav a,
+nav a:hover,
+footer a,
+footer a:hover
+ {
+	border-bottom: none;
+}
+
+.orbit-caption a {
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px dotted #fff;
+}
+	.orbit-caption a:hover {
+		text-decoration: none;
+		border-bottom: 1px solid #fff;
+	}
+
+/**********
+
+MAIN NAV BAR
+
+**********/
+
+nav {
+	width: 100%;
+}
+nav.top-bar {
+	height: 70px;
+	background-color: rgba(255,255,255,0.95);	
+}
+#body--front nav.top-bar {
+	background: transparent;
+}
+#body--front .title-area,
+#body--front .left {
+	display: none;
+}
+
+.top-bar.expanded {
+	background-color: rgba(255,255,255,0.95);	
+}
+
+.top-bar .name {
+	height: 70px;
+}
+
+.logo-karma {
+	display: block;
+	height: 55px;
+	width: 128px;
+	margin-top: 8px;
+	margin-right: 20px;
+	background: url(images/logo-karma.png) no-repeat;
+	background-size: contain;
+}
+
+.menu--item, .menu--item-bold {
+	vertical-align: top;
+	position: relative !important;
+}
+.menu--item:hover, .menu--item-bold:hover {
+	background: #f87a5b;
+}
+
+.top-bar.expanded .title-area,
+.top-bar-section ul {
+	background: none;
+}
+
+.top-bar-section ul li > a,
+.top-bar .toggle-topbar.menu-icon a {
+	color: #777;
+	text-transform: uppercase !important;	
+	font-family: 'Source Sans Pro', sans-serif;	
+	font-size: 0.75rem;
+	letter-spacing: 0.05rem;	
+	text-decoration: none;
+}
+
+.menu--item a, .menu--item-bold a {
+	line-height: 70px !important;
+	padding: 0 18px !important;
+	background: none !important;
+}
+.menu--item a {
+	color: #8bd1d7 !important;
+}
+.menu--item a:hover {
+	color: #fff !important;
+}
+.menu--item-bold a {
+	font-weight: 600 !important;
+	font-size: 1rem !important;
+	color: #f87a5b !important;	
+}
+.menu--item-bold a:hover {
+	color: #fff !important;	
+}
+
+.top-bar .toggle-topbar.menu-icon a::after {
+	-webkit-box-shadow:
+		1px 10px 1px 1px #555, 
+		1px 16px 1px 1px #555, 
+		1px 22px 1px 1px #555;
+	box-shadow: 
+		0 10px 0 1px #555, 
+		0 16px 0 1px #555, 
+		0 22px 0 1px #555;
+}
+
+nav .right, nav .left {
+	padding-left: 0;
+}
+
+nav .title-area {
+	padding-left: 20px;
+}
+
+.top-bar .toggle-topbar.menu-icon {
+	margin-top: -24px;
+}
+
+
+
+/**********
+
+FOOTER	
+
+**********/
+
+footer {
+	width: 100%;
+	min-height: 120px;
+	background: #ececec;
+}
+
+.footer__menu-left {
+	background: url(images/logo-karma-paw.png) left center no-repeat;	
+	background-size: 35px 50px;	
+	padding-left: 60px;
+}
+
+.footer__menu {
+	margin: 0 auto;
+	padding: 0;
+	display: inline-block;
+}
+
+.footer__menu-item {
+		list-style: none;
+		margin: 0 15px 0 0;
+		padding: 0;
+		display: inline-block;
+		line-height: 120px;	
+		text-align: left;		
+}
+
+.footer__menu-item a {
+	font-size: 0.75rem;	
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #f87a5b;	
+	text-decoration: none;
+}
+.footer__menu-item a:hover {
+	color: #f74519;
+}
+
+.footer__social {
+	text-align: right;
+}
+
+.social {
+	display: inline-block;
+	margin-top: 45px;
+}
+.social a {
+	display: block;
+	height: 25px;
+	width: 25px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.social__fb {
+	background: url(images/sm-fb.png) center center no-repeat;	
+	background-size: cover;
+}
+.social__tw {
+	background: url(images/sm-tw.png) center center no-repeat;	
+	background-size: cover;
+}
+.social__in {
+	background: url(images/sm-in.png) center center no-repeat;	
+	background-size: cover;
+}
+.social__tu {
+	background: url(images/sm-tu.png) center center no-repeat;	
+	background-size: cover;
+}
+.button--newsletter {
+	height: 50px;
+	margin-top: 35px;
+	border: 2px solid #f17a5d;
+	color: #f17a5d;
+	background: transparent;
+}
+.button--newsletter:hover {
+	background: #f17a5d;
+	color: #fff;	
+	border: 2px solid #f17a5d;
+}
+
+
+
+/**********
+
+HOME PAGE
+
+**********/
+
+.header--home {
+	height: 550px;
+	width: 100%;
+	background: url(images/header-home.jpg) center center no-repeat;
+	background-size: cover;
+	top: 0;
+}
+
+.header__logo {
+	margin-top: 80px;
+}
+
+.header__button {
+	background: transparent;
+	border: 2px solid #fff;
+}
+.header__button:hover {
+	background: #f17a5d;
+}
+
+.button--icon {
+	text-align: center;
+	margin: 30px auto 60px auto;
+}
+.button--icon a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 1.75rem;
+	font-weight: 300;
+	color: #f17a5d;
+}
+
+.story--blurb {
+	text-align: center;
+	font-size: 1.75rem;
+	font-weight: 400;
+}
+
+.event--text {
+	color: #f17a5d;
+}
+
+	.event--text a {
+		color: #f17a5d;
+		border-bottom: none;
+	}
+	.event--text a:hover {
+		color: #f17a5d;
+		text-decoration: underline;
+		border-bottom: none;
+	}
+
+.event--date a{
+	color: #f17a5d;
+	text-decoration: none;
+}
+	.event--date a:hover {
+		text-decoration: underline;
+	}
+
+hr.event--rule {
+	border: 0;
+	border-top: 1px solid #fde3dc;
+}
+
+.l-tails {
+	margin-top: 25px;
+}
+.title--center {
+	text-align: center;
+}
+
+.l-partners {
+	background: #8bd1d7;
+	margin-top: 50px;
+	padding: 50px 0 75px 0;
+}
+.partners--title {
+	color: #fff;
+	text-align: center;
+}
+.partners--box {
+	max-width: 607px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/**********
+
+ADOPT
+
+**********/
+
+.header--adopt {
+	background: url(images/img-header.jpg) no-repeat;
+	background-size: cover;
+	height: 550px;
+	width: 100%;
+}
+
+.header__mainmessage-adopt {
+	text-align: center;
+	font-size: 3.5rem;
+	font-weight: 400;
+	line-height: 1em;
+	margin-top: 225px;
+	margin-bottom: 50px;
+}
+
+.dog-profile {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+.dog-profile h3 {
+	margin-top: 0;
+}
+
+.l-dogselector {
+	background: #fac8ba;
+	min-height: 70px;
+	text-align: center;
+}
+
+.dog-gallery__selector {
+	display: block;
+	width: 100%;
+	height: 70px;
+	font-weight: 400;
+	line-height: 70px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 0.07rem;
+	background: url(images/icon-arrowdown.png) center 55px no-repeat;
+	background-size: 7px 7px;
+	background-color: #fac8ba;	
+}
+.dog-gallery__selector:hover {
+	background-color: #f17a5d;
+}
+
+.dog-gallery__filter {
+	margin: 10px 0 0 0;
+}
+.filter__label {
+	letter-spacing: 0.05rem;
+	color: #fac8ba;	
+}
+.filter__items {
+	font-weight: 400;
+	letter-spacing: 0.05rem;	
+	color: #f17a5d;
+}
+
+#legend {
+	color: #f17a5d;
+	text-transform: uppercase;
+}
+
+.dog-gallery__item {
+	margin-bottom: 50px;
+}
+
+.dog__block {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fe7950;	
+}
+.dog__label {
+	margin: -65px 0 0 15px;
+}
+.dog__name {
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+.dog__description {
+	font-weight: 600;
+}
+
+
+
+/**********
+
+EXPLORE
+
+**********/
+
+.l-exploremenu {
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+.explore__item {
+	margin-bottom: 0px;
+}
+
+.participate__item-bg,
+.explore__item-bg {
+	outline: 2px solid #fbc8bb;
+}
+.explore__item-learn {
+	background: url(images/icon-exp-learn.png) no-repeat;
+	background-size: cover;
+}
+.explore__item-participate {
+	background: url(images/icon-exp-participate.png) no-repeat;
+	background-size: cover;	
+}
+.explore__item-donate {
+	background: url(images/icon-exp-donate.png) no-repeat;
+	background-size: cover;	
+}
+
+.explore__item-text {
+	position: absolute;
+	margin-left: 15px;
+	top: 25px;
+}
+.explore__item-text h2 {
+	margin-top: -5px;
+}
+
+
+.explore__item .explore__item-bg img {
+	visibility: hidden;
+}
+.explore__item:hover  .explore__item-bg img {
+	visibility: visible;
+}
+.explore__item-bg:hover {
+	outline: 2px solid #f17a5d;
+}
+.explore__item:hover h2,
+.explore__item:hover h4 {
+	color: #fff;
+}
+
+
+
+/**********
+
+CONTENT AREA	
+
+**********/
+
+.header--about,
+.header--donate {
+	background: url("images/img-header.jpg");
+	background-size: cover;
+	height: 550px;
+	width: 100%;
+}
+
+.header__mainmessage {
+	text-align: center;
+	font-size: 3.5rem;
+	font-weight: 400;
+	line-height: 1.25em;
+}
+
+.header__mainmessage-about {
+	margin-top: 200px;
+	margin-bottom: 50px;
+}
+
+.header__mainmessage-donate {
+	margin-top: 225px;
+	margin-bottom: 50px;
+}
+
+.participate__ages-paragraph,
+.about__history-paragraph,
+.donate__blurb,
+.participate__blurb {
+	margin-top: 50px;
+}
+
+.about__team-members {
+	text-align: center;
+	font-weight: 400;
+	font-size: 1.25rem;
+	margin-top: 40px;
+}
+
+.about__team-title {
+	display: block;
+	font-size: 1rem;
+	margin-top: -10px;
+}
+
+.row--last {
+	margin-bottom: 70px;
+}
+
+.donate__featured-paragraph {
+	margin-top: 20px;
+	padding: 0;
+}
+
+.donate__programs {
+	padding-top: 50px;
+}
+
+.participate__programs-description,
+.donate__programs-description {
+	margin-top: -7px;
+	padding-bottom: 30px;
+	font-size: 1rem;
+}
+
+.donate__featured-title {
+	padding-top: 70px;
+	font-size: 2rem;
+	text-align: center;
+}
+
+.donate__featured-title-2 {
+	padding-top: 0px;
+	font-size: 2rem;
+	text-align: center;
+}
+
+.donate__related-programs {
+	text-align: center;
+	font-weight: 300;
+	font-size: 1.4rem;
+	line-height: 2rem;
+}
+
+.donate__program-title {
+	text-align: center;
+	margin-top: 0px;
+}
+
+.button--donate--featured {
+	margin-top: 10px;
+}
+
+.names__wop .columns {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	line-height: 1.4em;
+
+}
+
+.section--wop-diamond .names__wop .columns, 
+.section--wop-platinum .names__wop .columns,
+.section--wop-gold .names__wop .columns {
+	font-weight: 300;
+	font-size: 1.4rem;	
+}
+
+.section--wop-silver .names__wop .columns {
+	font-weight: 300;
+	font-size: 1rem;	
+}
+
+
+.section--wop-diamond, 
+.section--wop-platinum,
+.section--wop-gold,
+.section--wop-silver {
+	margin-bottom: 20px;
+}
+
+.button--donate {
+	margin-top: -10px;
+}
+
+.button--learn {
+	margin-top: 10px;
+}
+
+.button--help {
+	margin-top: -10px;
+}
+
+
+/**********
+
+PARTICIPATE
+
+**********/
+
+
+.participate__program-title {
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 1.4rem;
+}
+
+.participate__programs-question {
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 1.4rem;
+	color: #f17a5d;
+	font-weight: 600;
+	line-height: 1.6rem;
+}
+
+.participate__programs-description {
+	color: #f17a5d;
+	font-weight: 400;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 1rem;
+	line-height: 1.2rem;
+}
+
+br.participate {
+	line-height: 2rem;
+}
+
+.button--volunteer-top {
+	padding-bottom: 40px;
+}
+
+div.button--volunteer-bottom {
+	margin-top: -30px;
+	padding-bottom: 30px;
+}
+
+.participate__ages-13-17 {
+	margin-top: 50px;
+}
+
+
+
+
+/**********
+
+DEFAULT
+
+**********/
+
+.row--default {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+
+
+
+/**********
+
+RESPONSIVE STYLES
+
+**********/
+
+/* small displays */
+@media only screen and (max-width: 40.062em) {
+	.footer__menu {
+		width: 100%;
+	}
+	.footer__menu-item {
+			list-style: none;
+			margin: 25px 0 0 0;
+			padding: 0;
+			display: block;
+			line-height: 1em;	
+			text-align: center;		
+	}
+
+	.footer__social {
+		text-align: center;
+	}
+	.social {
+		margin-top: 25px;
+	}	
+	
+	.header__mainmessage {
+		font-size: 2.5rem;
+		line-height: 1.25em;		
+	}
+	
+	.header__mainmessage-adopt {
+		margin-top: 125px;
+	}
+	
+	.header__mainmessage-about {
+		margin-top: 150px;
+		margin-bottom: 50px;
+	}	
+	
+	.header__mainmessage-donate {
+		margin-top: 175px;
+		margin-bottom: 50px;
+	}
+	
+}
+
+/* medium displays */
+@media only screen and (max-width: 64.062em) {
+	
+	.footer__menu {
+		text-align: center;
+		margin: 0 auto;
+	}
+		
+	.footer__menu-left {
+		background: none;
+		padding-left: 15px;
+	}
+
+	.menu--item a, .menu--item-bold a {
+		padding: 0 10px !important;
+	}	
+		
+}
+
+
+
+/*****
+
+PLUG-INS
+
+*****/
+
+ul.ft-menu > li.ft-field > div.ft-panel > fieldset.ft-search {
+	display: none !important;
+}
+
+ul.ft-menu > li.ft-field > div.ft-panel:after {
+	border-bottom: #fff !important;
+	top: -7px !important;	
+}
+
+.ft-panel, .ft-tags {
+	padding: 0 !important;
+}
+
+#fsCell26563625 select {
+	max-width: 30% !important;
+	margin-right: 10px;
+	float: left;
+	display: inline;
+}
+
+#fsCell26563625 span.always-ltr span {
+	float: left;
+	margin: 10px 10px 0 0;
+}
+
